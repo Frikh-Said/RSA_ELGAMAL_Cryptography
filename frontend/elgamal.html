@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EL GAMAL Cryptography Tool</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cryptography Tool</h1>
+    <h2>EL GAMAL</h2>
+    
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab active" id="encryption-tab">Encryption/Decryption</button>
+      <button class="tab" id="signature-tab">Signature/Verification</button>
+    </div>
+    
+    <!-- Forms -->
+    <div class="tab-content" id="encryption-form">
+      <div class="form-container">
+        <!-- Left Side -->
+        <div class="side">
+          <h3>Encrypt a Message</h3>
+          <input type="text" id="message-to-encrypt" placeholder="Enter message to encrypt">
+          <button id="encrypt-button">Encrypt Message</button>
+          <textarea id="encrypted-message" readonly placeholder="Encrypted message will appear here..."></textarea>
+        </div>
+        <!-- Right Side -->
+        <div class="side">
+          <h3>Decrypt a Message</h3>
+          <input type="text" id="message-to-decrypt" placeholder="Enter encrypted message">
+          <button id="decrypt-button">Decrypt Message</button>
+          <textarea id="decrypted-message" readonly placeholder="Decrypted message will appear here..."></textarea>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Placeholder for other tabs -->
+    <div class="tab-content" id="signature-form" style="display: none;">
+      <div class="form-container">
+        <!-- Left Side: Signing -->
+        <div class="side">
+          <h3>Message to Sign</h3>
+          <textarea id="message-to-sign" placeholder="Enter message to sign"></textarea>
+          <button id="sign-message-button">Sign Message</button>
+          <textarea id="digital-signature" readonly placeholder="Digital Signature will appear here..."></textarea>
+        </div>
+        <!-- Right Side: Verification -->
+        <div class="side">
+          <h3>Verify Signature</h3>
+          <textarea id="original-message" placeholder="Enter original message"></textarea>
+          <textarea id="signature-to-verify" placeholder="Enter digital signature"></textarea>
+          <button id="verify-signature-button">Verify Signature</button>
+          <textarea id="verification-output" readonly placeholder="Verification result will appear here..."></textarea>
+        </div>
+      </div>
+    </div>
+    
+      
+
+  </div>
+
+  <script src="js/elgamal-tool.js"></script>
+</body>
+</html>

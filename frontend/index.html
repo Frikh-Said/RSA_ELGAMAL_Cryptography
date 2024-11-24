@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cryptography Tool</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cryptography Tool</h1>
+    <div class="row">
+      <div class="crypto-box" id="rsa-box">
+        <h2>RSA</h2>
+        <p>RSA algorithm is an asymmetric cryptography algorithm. Asymmetric means that it works on two different keys i.e. Public Key and Private Key. As the name describes the Public Key is given to everyone and the Private Key is kept private.</p>
+        <button id="start-rsa">Start with RSA</button>
+      </div>
+      <div class="crypto-box" id="elgamal-box">
+        <h2>EL GAMAL</h2>
+        <p>ElGamal is an asymmetric cryptography algorithm used primarily for encryption and digital signatures. Like RSA, it involves two keys: a public key and a private key. It is based on the Discrete Logarithm Problem (DLP), which makes it secure against brute-force attacks.</p>
+        <button id="start-elgamal">Start with EL GAMAL</button>
+      </div>
+    </div>
+    <div class="help">
+      <p>Use this tool to perform RSA and ElGamal encryption, decryption, signing, and certificate generation. Enter your messages, and click the corresponding buttons to see results.</p>
+    </div>
+  </div>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
